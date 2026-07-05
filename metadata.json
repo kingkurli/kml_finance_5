@@ -1,0 +1,8 @@
+{
+  "name": "KML Finance",
+  "description": "Premium financial advisory, dynamic loan calculators, and personalized wealth management solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

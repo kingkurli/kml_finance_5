@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-blue: #0a1128;
+  --color-brand-gold: #f0b418;
+  --color-brand-green: #2b9c38;
+  --color-brand-purple: #81469d;
+  --color-brand-orange: #e67a21;
+}
+
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
