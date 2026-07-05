@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Settings": {
+      "title": "Settings",
+      "description": "Centralized integration settings for Google Sheets",
+      "type": "object",
+      "properties": {
+        "googleScriptUrl": {
+          "type": "string",
+          "description": "Google Apps Script Web App URL ending with /exec"
+        },
+        "integrationMode": {
+          "type": "string",
+          "enum": ["central", "individual"],
+          "description": "Integration mode for Google Sheets"
+        },
+        "loanSpreadsheetIdOrUrl": {
+          "type": "string",
+          "description": "Spreadsheet ID or URL for loan enquiries"
+        },
+        "consultSpreadsheetIdOrUrl": {
+          "type": "string",
+          "description": "Spreadsheet ID or URL for consultations"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the settings were last updated"
+        }
+      },
+      "required": ["integrationMode"]
+    }
+  },
+  "firestore": {
+    "settings/sheetsConfig": {
+      "schema": "Settings",
+      "description": "Centralized spreadsheet and Apps Script configuration"
+    }
+  }
+}

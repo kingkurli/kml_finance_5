@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Settings collection
+    match /settings/sheetsConfig {
+      allow read: if true;
+      allow write: if request.auth != null && 
+                    request.auth.token.email_verified == true && 
+                    request.auth.token.email == "kml.finance.1@gmail.com";
+    }
+  }
+}

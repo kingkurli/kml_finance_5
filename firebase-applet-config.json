@@ -3,6 +3,7 @@
   "appId": "1:832528925057:web:905098e400ed6d402e6880",
   "apiKey": "AIzaSyDuzsnlcgLezqw__tY5rHtefggAa8ezlCE",
   "authDomain": "gen-lang-client-0223766416.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-kmlfinance-72037f01-2713-41ec-a0ec-6dce133ac62a",
   "storageBucket": "gen-lang-client-0223766416.firebasestorage.app",
   "messagingSenderId": "832528925057",
   "measurementId": ""
