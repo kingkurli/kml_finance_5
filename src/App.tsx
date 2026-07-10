@@ -67,7 +67,9 @@ export default function App() {
   // Google Sheets Integration Settings states
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [googleScriptUrl, setGoogleScriptUrl] = useState(() => {
-    return localStorage.getItem('kml_google_script_url') || ((import.meta as any).env.VITE_GOOGLE_SCRIPT_URL as string) || '';
+    return localStorage.getItem('kml_google_script_url') || 
+           ((import.meta as any).env.VITE_GOOGLE_SCRIPT_URL as string) || 
+           'https://script.google.com/macros/s/AKfycbxRr5BhogCwvuSJAU553kOKuWCtAkhEDp4K1qh85CQWMOSOCVYOUpf69qAmUAlq59b6/exec';
   });
   const [integrationMode, setIntegrationMode] = useState<'central' | 'individual'>(() => {
     const savedMode = localStorage.getItem('kml_sheets_mode');
