@@ -21,7 +21,7 @@ interface LoansTabProps {
 export default function LoansTab({ onApplyClick }: LoansTabProps) {
   // Local EMI Calculator State
   const [loanAmount, setLoanAmount] = useState(1500000); // 15 Lakh
-  const [rateOfInterest, setRateOfInterest] = useState(8.75); // 8.75%
+  const [rateOfInterest, setRateOfInterest] = useState(7.0); // 7.0%
   const [loanTenure, setLoanTenure] = useState(7); // 7 years
 
   // Calculate Monthly EMI
@@ -53,7 +53,7 @@ export default function LoansTab({ onApplyClick }: LoansTabProps) {
       color: "from-blue-600 to-indigo-600",
       textColor: "text-blue-600",
       bgLight: "bg-blue-50",
-      interest: "Starting at 10.5% p.a.",
+      interest: "Starting at 9.99% p.a.",
       description: "Quick personal funding for medical emergencies, home renovation, wedding expenses, or vacation planning with minimal document requirements.",
       features: [
         "Unsecured loan up to ₹25 Lakhs",
@@ -69,7 +69,7 @@ export default function LoansTab({ onApplyClick }: LoansTabProps) {
       color: "from-emerald-600 to-teal-600",
       textColor: "text-emerald-600",
       bgLight: "bg-emerald-50",
-      interest: "Starting at 13.0% p.a.",
+      interest: "Starting at 10% p.a.",
       description: "Fuel your business expansion, fund working capital, upgrade machineries, or stock up inventory with customized business credit lines.",
       features: [
         "Loans up to ₹50 Lakhs without collateral",
@@ -85,7 +85,7 @@ export default function LoansTab({ onApplyClick }: LoansTabProps) {
       color: "from-violet-600 to-purple-600",
       textColor: "text-violet-600",
       bgLight: "bg-violet-50",
-      interest: "Starting at 8.4% p.a.",
+      interest: "Starting at 7% p.a.",
       description: "Turn your dream home into reality with low-interest home purchasing schemes, or unlock high capital with Loan Against Property (LAP).",
       features: [
         "Home purchase, construction, or extension",
@@ -101,7 +101,7 @@ export default function LoansTab({ onApplyClick }: LoansTabProps) {
       color: "from-amber-600 to-orange-600",
       textColor: "text-amber-600",
       bgLight: "bg-amber-50",
-      interest: "Starting at 9.5% p.a.",
+      interest: "Starting at 7% p.a.",
       description: "Fund high education in India and overseas. Cover university admission fees, accommodation charges, air travel, and educational supplies.",
       features: [
         "100% funding for top-tier global universities",
@@ -135,7 +135,7 @@ export default function LoansTab({ onApplyClick }: LoansTabProps) {
             </div>
             <div className="bg-white/5 border border-white/10 px-4 py-2.5 rounded-lg flex items-center gap-2">
               <TrendingUp size={16} className="text-brand-gold" />
-              <span className="text-sm font-medium">Interest starting at 8.4%</span>
+              <span className="text-sm font-medium">Interest starting at 7%</span>
             </div>
           </div>
         </div>
