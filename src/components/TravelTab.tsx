@@ -13,7 +13,6 @@ import {
   Compass, 
   ShieldCheck, 
   ArrowRight, 
-  Sparkles, 
   Plane, 
   Navigation,
   Share2,
@@ -27,7 +26,6 @@ import {
   ExternalLink
 } from 'lucide-react';
 
-import travelBannerImg from '../assets/images/kml_travel_banner_1787833719505.jpg';
 import khatuShyamImg from '../assets/images/khatu_shyam_darshan_1787833741004.jpg';
 import salasarBalajiImg from '../assets/images/salasar_balaji_darshan_1787833756920.jpg';
 import jeenMataImg from '../assets/images/jeen_mata_temple_1787833774099.jpg';
@@ -275,98 +273,11 @@ export default function TravelTab({ onTravelEnquiry }: TravelTabProps) {
   };
 
   return (
-    <div id="travel-page-container" className="animate-fade-in space-y-16 pb-12">
+    <div id="travel-page-container" className="animate-fade-in space-y-12 pb-12">
       
-      {/* 1. HERO BANNER WITH SACRED RAJASTHAN MOTIFS */}
-      <section className="relative rounded-3xl overflow-hidden shadow-2xl border border-amber-500/30">
-        <div className="relative min-h-[420px] md:min-h-[480px] flex items-center justify-center p-8 md:p-14 text-white">
-          <img 
-            src={travelBannerImg} 
-            alt="KML Travel Pilgrimage Banner" 
-            referrerPolicy="no-referrer"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-900/80 to-amber-950/75" />
-          
-          <div className="relative z-10 max-w-3xl mx-auto text-center space-y-5">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30 backdrop-blur-md shadow-sm">
-              <Sparkles size={15} className="text-amber-300" />
-              ॥ चलो दर्शनों की ओर, आस्था के पावन द्वार ॥
-            </div>
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white drop-shadow-md">
-              Divine Temple Tour Services
-            </h1>
-            
-            <p className="text-amber-100 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              Spiritual Journeys & Divine Experiences across Khatu Shyam Ji, Salasar Balaji, Jeen Mata, Rani Sati, Sakambhari & Mansa Mata with luxury Innova Crysta & AC fleet.
-            </p>
-
-            <div className="pt-3 flex flex-wrap items-center justify-center gap-4">
-              <button 
-                onClick={() => scrollToSection('divine-temple-showcase')}
-                className="bg-amber-500 hover:bg-amber-400 text-gray-950 font-extrabold px-8 py-3.5 rounded-full shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-2 cursor-pointer"
-              >
-                <Sparkles size={18} />
-                Explore Holy Shrines
-              </button>
-              <button 
-                onClick={() => scrollToSection('custom-fare-calculator')}
-                className="bg-white/10 hover:bg-white/20 text-white font-bold px-7 py-3.5 rounded-full border border-white/30 backdrop-blur-md transition-all duration-200 flex items-center gap-2 cursor-pointer"
-              >
-                <Calculator size={18} />
-                Calculate Trip Fare
-              </button>
-            </div>
-
-            <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left">
-              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-3 rounded-xl flex items-center gap-2.5">
-                <ShieldCheck size={18} className="text-amber-400 shrink-0" />
-                <span className="text-xs font-semibold text-gray-200">Safe & Secure Travel</span>
-              </div>
-              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-3 rounded-xl flex items-center gap-2.5">
-                <Clock size={18} className="text-amber-400 shrink-0" />
-                <span className="text-xs font-semibold text-gray-200">100% On-Time Pickup</span>
-              </div>
-              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-3 rounded-xl flex items-center gap-2.5">
-                <Car size={18} className="text-amber-400 shrink-0" />
-                <span className="text-xs font-semibold text-gray-200">Comfortable AC Fleet</span>
-              </div>
-              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-3 rounded-xl flex items-center gap-2.5">
-                <Users size={18} className="text-amber-400 shrink-0" />
-                <span className="text-xs font-semibold text-gray-200">Experienced Drivers</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. OFFICIAL DIVINE TEMPLE TOUR SHOWCASE (DIRECT FROM BROCHURE POSTER) */}
+      {/* 1. HOLY SHRINE TOUR CARDS (WITH SACRED DARSHAN IMAGES) */}
       <section id="divine-temple-showcase" className="space-y-8">
         
-        {/* Section Header with Sacred Sanskrit/Hindi Shlok & Branding */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="flex items-center justify-center gap-3">
-            <span className="h-0.5 w-12 bg-amber-600 rounded-full" />
-            <span className="text-xs sm:text-sm font-extrabold text-amber-700 tracking-widest uppercase">
-              SPIRITUAL JOURNEYS • DIVINE EXPERIENCES
-            </span>
-            <span className="h-0.5 w-12 bg-amber-600 rounded-full" />
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 tracking-tight">
-            Divine Temple Tour Services
-          </h2>
-
-          <p className="text-base sm:text-lg font-bold text-amber-800 italic">
-            ॥ चलो दर्शनों की ओर, आस्था के पावन द्वार ॥
-          </p>
-          
-          <p className="text-gray-600 text-sm max-w-xl mx-auto">
-            Experience comfortable, door-to-door pilgrimage trips with verified chauffeurs, sanitised Innova Crysta & AC sedans across Rajasthan’s most revered spiritual destinations.
-          </p>
-        </div>
-
         {/* 6 Divine Temple Cards with Color-Matched Archways */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5">
           {SHRINE_CARDS.map((shrine) => (
