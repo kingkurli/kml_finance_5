@@ -959,24 +959,24 @@ export default function App() {
 
                   {/* Card 4: TOUR & TRAVEL */}
                   <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col items-center hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-orange-50/40 rounded-bl-full -z-10 group-hover:bg-orange-50 transition-colors" />
-                    <div className="w-16 h-16 rounded-full bg-brand-orange flex items-center justify-center mb-6 shadow-md text-white">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-amber-50/40 rounded-bl-full -z-10 group-hover:bg-amber-50 transition-colors" />
+                    <div className="w-16 h-16 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-md text-white">
                       <Plane size={32} />
                     </div>
-                    <h3 className="text-xl font-bold mb-6 text-brand-orange uppercase tracking-wide">Tour & Travel</h3>
+                    <h3 className="text-xl font-bold mb-6 text-amber-600 uppercase tracking-wide">Tour & Travel</h3>
                     <ul className="w-full space-y-3.5 mb-8 flex-grow text-left">
-                      {["Flight Booking", "Holiday Packages", "Visa Assistance", "Hotel Booking"].map((item, idx) => (
+                      {["Pilgrimage Tour Packages", "Khatu Shyam & Salasar Circuits", "Custom Cab & Fare Calculator", "Hotel & Station Pickup"].map((item, idx) => (
                         <li key={idx} className="flex items-start text-gray-700">
-                          <CircleCheck size={18} className="text-brand-orange mr-2.5 mt-0.5 flex-shrink-0" />
+                          <CircleCheck size={18} className="text-amber-600 mr-2.5 mt-0.5 flex-shrink-0" />
                           <span className="text-sm font-medium">{item}</span>
                         </li>
                       ))}
                     </ul>
                     <button 
                       onClick={() => handleTabChange('travel')}
-                      className="w-full py-3 rounded font-semibold transition-all bg-brand-orange hover:bg-orange-600 text-white cursor-pointer active:scale-95 shadow-sm"
+                      className="w-full py-3 rounded font-semibold transition-all bg-amber-600 hover:bg-amber-700 text-white cursor-pointer active:scale-95 shadow-sm"
                     >
-                      Apply Now
+                      Book Pilgrimage & Tours
                     </button>
                   </div>
                 </div>
